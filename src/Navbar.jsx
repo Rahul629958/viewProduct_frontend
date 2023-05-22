@@ -12,8 +12,8 @@ export default function Navbar(props)
 
     return (
       <div style={{zIndex:2}} className="navTop">
-        <nav className="navbar navbar-expand-lg navbar-light "  style={{backgroundColor:"#54B4D3",opacity:0.9,position:"fixed",top:"0",width:"100%"}} >
-          <img src="../2282259.png" style={{width:"5%" , marginLeft:"1rem"}}/>
+        <nav className="navbar navbar-expand-lg navbar-light "  style={{backgroundColor:"#54B4D3",opacity:0.9,position:"fixed",top:"0",width:"100%",backdropFilter:"blur(5px)"}} >
+          <img src="../2282259.png" style={{width:"2rem" , marginLeft:"1rem"}}/>
   <a className="navbar-brand brandBtn" name="homeBtn" style={{color:"#00235B",fontWeight:"bold", fontSize:"30px", fontFamily:"cursive",marginLeft:"1rem", cursor:"pointer"}}>viewProduct</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>

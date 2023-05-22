@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import SiteIcon from "./SiteIcon"
 import axios from "axios";
 
+
 function Home(props) {
   const [link,setLink] = useState("");
   var handleSubmit= (e)=>
@@ -10,14 +11,14 @@ function Home(props) {
     e.preventDefault();
     
   if(link.startsWith("https://www.producthunt.com/posts/")){  const data = {link : link};
-fetch('https://viewproduct-backend.onrender.com/', {
+fetch('https://viewproduct-site.onrender.com/', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify(data)
 })
-
+// https://viewproduct-backend.onrender.com/
 
 props.func(false);} else {setLink(""); alert("Enter correct product link.")}
   }
@@ -31,9 +32,7 @@ props.func(false);} else {setLink(""); alert("Enter correct product link.")}
         <form method="post" action="" onSubmit={handleSubmit} >
        <input className="form-control inputText" type="text" placeholder="Paste your producthunt link here." onChange={e=>(setLink(e.target.value))} value={link} />
         <br />
-        <input className="inputCheck" type="checkbox" id="suggestion" name="suggestion" />
-
-        <span className = "inputCheck"> View suggestion</span>
+        <p >The producthunt link of products should be in given format:<br/> <span style={{color:"blue"}}>https://www.producthunt.com/posts/<span style={{color:"purple"}}>product_name</span></span></p>
         <br />
         <button className="btn btn-info" type="submit" onClick={handleSubmit}> view Details</button>
         </form>
