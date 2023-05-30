@@ -9,23 +9,24 @@ body{
 .homebox
 {
     width: fit-content;
-    margin: 5% auto auto auto;
-    background-color: #A6D0DD;
+    margin: 3rem auto auto auto;
+    background-color: #ffffff;
     border-radius: 1rem;
-    box-shadow: 10px 10px #ffffff;
-
+    box-shadow: 10px 10px 20px #a2a2a2;
+   padding: 0.5rem 2rem 1rem 2rem;
+   z-index: 1;
 
 }
 
 
 .heading
 { 
-   font-size: 300%;
+   font-size: 150%;
    text-align: center;
    margin-bottom: 10%;
    margin-top: 2%;
-   padding-left:10px;
-   padding-right:10px;
+   padding-left:5rem;
+   padding-right:5rem;
    transition-duration:0.5s;
 }
 
@@ -48,26 +49,32 @@ body{
 
 .imgIcon
 {
-  width:10%;
+  width:7rem;
   margin-top:10px;
-  margin-left: 5%;
+  margin-left: 3rem;
+  display: inline-block;
+  z-index: 1;
 }
 
 
 .iconText
 {
-  font-size: 500%;
+  font-size: 300%;
   font-family: cursive;
   color: aliceblue;
+  margin-left: 2rem;
+  display: inline-block;
+  color:#3C486B;
 }
 .resultBox{
-margin-top: 9rem;
-background-color: #cae9f2;
+margin-top: 5rem;
+background-color: #ffffff;
 padding-bottom: 30%;
-border-top-left-radius: 3rem;
-border-top-right-radius: 3rem;
+
+
 
 }
+/* #cae9f2 */
 
 .productBox
 {
@@ -88,7 +95,7 @@ border-top-right-radius: 3rem;
 }
 .productTitle
 {
-  font-size: 300%;
+  font-size: 200%;
   font-weight: bolder;
   text-shadow:2px 2px #ffffff;
   transition-duration:0.5s;
@@ -96,7 +103,7 @@ border-top-right-radius: 3rem;
 .productTitle:hover
 {
   cursor: pointer;
-  font-size: 310%;
+  font-size: 250%;
   text-shadow:2px 2px #b1fcff;
   text-decoration: underline;
 }
@@ -106,23 +113,23 @@ border-top-right-radius: 3rem;
   color:brown;
   margin-top: 5px;
   
-  font-weight: 600;
+  font-weight: 100;
   text-shadow:1px 1px #d9fffd;
 }
 .productDescription
 {
   font-size: 110%;
-  background-color: #b4e4e2;
+  
   padding: 15px;
+  padding-left: 0;
   border-radius: 1rem;
-  border-style: solid;
-  border-width: 1px;
   border-color: #00235B;
   color: rgb(0, 0, 0);
+  font-weight: 500;
 }
 .productTag
 {
-  font-size: 150%;
+  font-size: 110%;
 }
 .productTagItem
 {
@@ -132,6 +139,14 @@ border-top-right-radius: 3rem;
   margin-left: 10px;
   color: white;
   display: inline-block;
+}
+
+.productTagItem:hover{
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgb(53, 143, 147);
+  color:rgb(53, 143, 147);
 }
 .comment{
   font-size: 150%;
@@ -157,6 +172,8 @@ border-top-right-radius: 3rem;
   padding:2px 15px 2px 15px;
   text-decoration: none;
   color: #00235B;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .Rating
@@ -184,7 +201,7 @@ border-radius: 1rem;
 padding: 10px;
 padding-bottom:10px;
 margin-left: 1rem;
-margin-right: 3rem;
+margin-right: 1rem;
 margin-top: 10px;
 line-height: 100%;
 height: fit-content;
@@ -244,11 +261,14 @@ margin-right: 0rem;  */
 .tagSuggestWhole
 {
   border-radius: 1rem;
-  background-color: #effaff;
+  background-color: #ffffff;
   padding:4px 15px 4px 15px;
   margin-left: 10px;
   display: inline-block;
   margin-top:10px;
+  /* border-style: solid;
+  border-width: 1px; */
+  box-shadow: 3px 3px 10px grey;
 }
 
 .suggestHighlights
@@ -398,10 +418,14 @@ border-width: 2px;
 .hSuggDiv
 {
  
- margin-bottom: 10px;
+  margin-bottom: 5px;
   background-color: white;
   border-radius: 1rem;
   padding-top: 0.5rem;
+  /* border-style: solid;
+  border-width: 1px; */
+  box-shadow: 3px 3px 10px grey;
+
 }
 
 .dSuggDiv
@@ -410,7 +434,9 @@ border-width: 2px;
   background-color: white;
   border-radius: 1rem;
   padding-top: 0.5rem;
-
+  /* border-style: solid;
+  border-width: 1px; */
+  box-shadow: 3px 3px 10px grey;
 }
 
 
@@ -419,4 +445,49 @@ hr {
   border-style: dotted none none;
   border-width: 5px;
   border-color: rgb(255, 255, 255);
+}
+
+
+.RefreshBtn
+{
+  width:1.5rem;
+  margin-top: -1rem;
+  margin-left: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  padding:2px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+.RefreshBtn :hover
+{
+  background-color: white;
+  padding:0;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #192954; 
+
+  border-radius: 10px;
+  width: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3C486B; 
 }

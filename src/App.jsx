@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import Result from "./Result";
 import Home from "./Home";
 
+
  function App()
 {
     const [home,setHome]=useState(true);
+    const [link,setLink] = useState("");
 
     function setValues(value)
     {
@@ -15,7 +17,7 @@ import Home from "./Home";
     return (
         <React.StrictMode>
 
-            {home?<Home func={setValues}/>:<Result func={setValues}/>}
+            {home?<Home func={setValues} setLink={setLink}/>:<Result func={setValues} link={link}/>}
           
         </React.StrictMode>
     );
