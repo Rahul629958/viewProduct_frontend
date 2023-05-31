@@ -6,7 +6,7 @@ export default function DemonstratedMedia(props) {
 
   return (
     <>
-      <span style={{ margin: "0.5rem 1.5rem 1rem 0rem", color: "white" }}>
+      <span style={{ margin: "0.5rem 1.5rem 1rem 0rem", color: "white",display:"inline-block" }}>
         <span
           style={
             text.includes("videos")

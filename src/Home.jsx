@@ -29,7 +29,8 @@ function Home(props) {
         }}
       >
         <SiteIcon />
-        <div className="container homebox">
+        <div style={{position:"absolute",left:"50%",width:"fit-content", maxWidth:"90%"}}>
+        <div className="container-fluid homebox">
           <h1 className="heading">SEARCH FOR THE PRODUCTS</h1>
           <form method="post" action="" onSubmit={handleSubmit}>
             <input
@@ -43,10 +44,10 @@ function Home(props) {
             <p>
               The producthunt link of products should be in given format:
               <br />{" "}
-              <span style={{ color: "blue" }}>
+              <div style={{ color: "blue",paddingRight:"0.5rem",maxWidth:"90%" }}>
                 https://www.producthunt.com/posts/
                 <span style={{ color: "purple" }}>product_name</span>
-              </span>
+              </div>
             </p>
             <br />
             <button
@@ -58,6 +59,7 @@ function Home(props) {
               view Details
             </button>
           </form>
+        </div>
         </div>
       </div>
     </React.StrictMode>
